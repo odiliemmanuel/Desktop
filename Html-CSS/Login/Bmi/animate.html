@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="circle" style="--i:0;"></div>
+        <div class="circle" style="--i:1;"></div>
+        <div class="circle" style="--i:2;"></div>
+        <div class="circle" style="--i:3;"></div>
+        <div class="circle" style="--i:4;"></div>
+        <div class="circle" style="--i:5;"></div>
+        <div class="circle" style="--i:6;"></div>
+        <div class="circle" style="--i:7;"></div>
+        <div class="circle" style="--i:8;"></div>
+        <div class="circle" style="--i:9;"></div>
+        <div class="circle" style="--i:10;"></div>
+        <div class="circle" style="--i:11;"></div>
+        <div class="circle" style="--i:12;"></div>
+        <div class="circle" style="--i:13;"></div>
+        <div class="circle" style="--i:14;"></div>
+        <div class="circle" style="--i:15;"></div>
+        <div class="circle" style="--i:16;"></div>
+        <div class="circle" style="--i:17;"></div>
+        <div class="circle" style="--i:18;"></div>
+        <div class="circle" style="--i:19;"></div>
+        <div class="circle" style="--i:20;"></div>
+                  
+
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+
+        for(let count = 1; count <= 20; count ++){
+            const div = document.createElement("div")
+            div.className = "circle";
+            div.style.setProperty("--i", i);
+            container.appendChild(div);
+
+
+        }
+
+        document.addEventListener("mousemove", (e) => {
+            let x = (window.innerWidth / 2 - e.clientX) / 25;
+            let y = (window.innerHeight / 2 - e.clientY) / 25;
+
+            container.style.transform = `rotateX(${70 + y}deg) rotateY(${x}deg)`;
+        })
+    </script>
+    
+</body>
+</html>
