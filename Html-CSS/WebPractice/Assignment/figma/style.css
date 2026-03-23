@@ -1,0 +1,89 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.background{
+    margin: 50px;
+    width: 1300px;
+    background-image: linear-gradient(to right, rgb(130, 211, 130), rgb(237, 248, 236));
+   
+}
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 60px
+}
+
+
+.biccas{
+    padding-right: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+
+
+.button{
+
+    color: rgb(239, 244, 244);
+    background-color: #54BD95;
+    font-size: 1.25em; 
+    border-radius: 3px;
+    width: 80px;
+    height: 40px;
+    border-radius: 19px;
+    border: none;
+   
+}
+
+
+.buttonText{
+    font-size: 15px;
+    color: azure;
+}
+
+
+.aboutColor{
+    color:rgb(166, 155, 155)
+    
+    
+}
+
+
+
+.mainWrapper{
+    color: rgb(75, 145, 74);
+    padding: 10px;
+    
+    
+}
+
+.freeTrial{
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: medium;
+    background-color: #54BD95;
+    color: #f4e9e9;
+    border: none;
+    font-family: Tahoma;
+}
+.texts{
+    color: black; 
+    font-size:20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    margin: 20px;
+}
